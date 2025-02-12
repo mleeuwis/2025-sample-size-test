@@ -5,11 +5,11 @@
 % conditions. 
 
 % Intended distinguisable difference from baseline to condition of interest
-difference = 0.1;  %W/kg
+difference = 0.1;  %W/kg, <- manually estimated from previous pilots
 
 % Estimate standard deviation of within-subject difference from baseline to
 % condition of interest
-std_diff = 0.15; %<- manually estimated from previous pilots
+std_diff = 0.15; %W/kg, <- manually estimated from previous pilots
 
 % Compute effect size (Cohen's d for paired data)
 effect_size = difference / std_diff;
