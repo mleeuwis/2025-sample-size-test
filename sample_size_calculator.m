@@ -18,5 +18,5 @@ effect_size = difference / std_diff;
 alpha = 0.05;    % Significance level
 power = 0.8;     % Desired power
 
-n = sampsizepwr('t', [0, std_diff], difference, power);
+n = sampsizepwr('t', [0, std_diff], difference, power, [], 'Tail','right');
 disp(['Required sample size: ', num2str(ceil(n))]);
